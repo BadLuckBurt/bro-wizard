@@ -29,57 +29,65 @@ namespace DaggerfallWorkshop.Game.Guilds
 
         protected static TextFile.Token[] welcomeTokens =
         {
-            TextFile.CreateTextToken("Excellent, %pcn, welcome to the Wizards! "), newLine, newLine,
+            TextFile.CreateTextToken("Very well, that is good enough for me, %pcf. Now then,"), newLine,
+            TextFile.CreateTextToken("it is my privilege to welcome you into the Brotherhood"), newLine,
+            TextFile.CreateTextToken("of Galen. Show determination, and act ever to preserve"), newLine,
+            TextFile.CreateTextToken("Daggerfall, and I foresee you will go far very indeed."), newLine,
 
-            TextFile.CreateTextToken(" "), newLine,
-            TextFile.CreateTextToken(" "), newLine,
-            TextFile.CreateTextToken(" "), newLine,
-            TextFile.CreateTextToken(" "), newLine,
-            TextFile.CreateTextToken(" "), newLine,
-            TextFile.CreateTextToken(" "), newLine,
+            TextFile.CreateTextToken("As one of us, you will always find restful"), newLine,
+            TextFile.CreateTextToken("accomodations made ready for you not only"), newLine,
+            TextFile.CreateTextToken("within this tower, but across the inns of the"), newLine,
+            TextFile.CreateTextToken("kingdom. As you rise through our ranks, greater"), newLine,
+            TextFile.CreateTextToken("benefits will also follow with your responsibilities."), newLine,
+            TextFile.CreateTextToken("But all that in due time - welcome once again, Initiate %pcf."), newLine,
         };
 
         protected static TextFile.Token[] eligibleTokens =
         {
-            TextFile.CreateTextToken("Hmm, yes, you seem like a good sort.... tbc"), newLine,
-            TextFile.CreateTextToken(" blah blah "), newLine, newLine,
+            TextFile.CreateTextToken("You wish to join the Brotherhood? Your character and"), newLine,
+            TextFile.CreateTextToken("skills indeed match what we are looking for among"), newLine,
+            TextFile.CreateTextToken("our numbers, but what of your motivations? As a member,"), newLine,
+            TextFile.CreateTextToken("your loyal service must be given unfailingly to the"), newLine,
+            TextFile.CreateTextToken("Royal Magician, and thereby you must pledge your life"), newLine,
+            TextFile.CreateTextToken("to unswervingly serve the throne of Daggerfall"), newLine,
 
-            TextFile.CreateTextToken("We offer classes in stuff "), newLine,
+            TextFile.CreateTextToken("Are you ready to make such a commitment, %pcf?"), newLine,
         };
 
         protected static TextFile.Token[] ineligibleLowSkillTokens =
         {
-            TextFile.CreateTextToken("I am sad to say that you are not eligible to join our guild."), newLine,
-            TextFile.CreateTextToken("We only accept members who are not you. "), newLine,
-            TextFile.CreateTextToken("other skills such as climbing, "), newLine,
-            TextFile.CreateTextToken("lockpicking, or stealth. "), newLine,
+            TextFile.CreateTextToken("Hmm, well - your heart may be in the right"), newLine,
+            TextFile.CreateTextToken("place, but you simply do not possess the"), newLine,
+            TextFile.CreateTextToken("magical prowess we expect as a minimum from"), newLine,
+            TextFile.CreateTextToken("members of the Brotherhood of Galen, I'm sorry."), newLine,
         };
 
         protected static TextFile.Token[] ineligibleBadRepTokens =
         {
-            TextFile.CreateTextToken("I am sad to say that you are ineligible to join our guild."), newLine,
-            TextFile.CreateTextToken("Your reputation amongst scholars is such that we do not "), newLine,
-            TextFile.CreateTextToken("wish to be associated with you, even for simple field work. "), newLine,
+            TextFile.CreateTextToken("I already know who you are, %pcf, and so am also aware of your"), newLine,
+            TextFile.CreateTextToken("less than stellar reputation within the kingdom. I'm simply"), newLine,
+            TextFile.CreateTextToken("cannot allow one such as you to become part of the Brotherhood."), newLine,
         };
 
         protected static TextFile.Token[] ineligibleLowIntTokens =
         {
-            TextFile.CreateTextToken("Sorry, %pcf, you do not exhibit the intellect we require "), newLine,
-            TextFile.CreateTextToken("from our recruits. Perhaps a less scholarly guild, such "), newLine,
-            TextFile.CreateTextToken("as the Fighters guild, would be more suited to your aptitude. "), newLine,
+            TextFile.CreateTextToken("I am sorry, %pcf, but the Brotherhood can only afford to"), newLine,
+            TextFile.CreateTextToken("to entrust the security of the realm to someone of keen"), newLine,
+            TextFile.CreateTextToken("mind. My advice? Perhaps the Fighters Guild can take you."), newLine,
         };
 
         protected static TextFile.Token[] promotionTokens =
         {
-            TextFile.CreateTextToken("Congratulations, %pcf. Because of your outstanding work for "), newLine,
-            TextFile.CreateTextToken("the guild, we have promoted you to the rank of %lev. "), newLine,
-            TextFile.CreateTextToken("Keep up the good work, and continue to study hard. "), newLine,
+            TextFile.CreateTextToken("You have proven yourself worthy and skillful enough to"), newLine,
+            TextFile.CreateTextToken("ascend from the rank of Initiate, %pcf. Henceforth, you"), newLine,
+            TextFile.CreateTextToken("hold the rank of Apprentice. As of this moment, access"), newLine,
+            TextFile.CreateTextToken("to our instructors, and their repositories of spells, will be given to you."), newLine,
         };
 
-        protected static int[] intReqs = { 30, 35, 40, 45, 50, 55, 60, 65, 65, 65 }; // Bro?
+        protected static int[] intReqs = { 40, 40, 45, 45, 50, 55, 60, 65, 70, 75 }; // Bro?
 
         protected static string[] rankTitles = {
-            "Initiate", "Apprentice", "Sorcerer", "Magus", "Battle-Magus", "Wizard", "War Wizard", "Master Wizard", "Castellan of Magic", "Lord Warder"
+            "Initiate", "Apprentice", "Sorcerer", "Magus", "Battle Magus", "Wizard", "War Wizard", "Master Wizard", "Castellan of Magic", "Lord Warder"
         };
 
         protected static List<DFCareer.Skills> guildSkills = new List<DFCareer.Skills>() {

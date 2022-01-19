@@ -86,10 +86,10 @@ namespace WizardGuilds
                 name = "Harlwystyr",
                 summon = -1,
                 region = 18,    // Daggerfall
-                power = 25,     // Bro: change these lines as you want them... I copied from Lord Verathon in my RR mod
+                power = 40,     // Bro: change these lines as you want them... I copied from Lord Verathon in my RR mod
                 face = 12,
                 race = 2,
-                flat1 = (183 << 7) + 20,
+                flat1 = (177 << 7) + 11,
                 sgroup = 3,     // Bro: no more changes now
                 ggroup = 18,
                 children = new List<int>() { 1101 }
@@ -104,6 +104,7 @@ namespace WizardGuilds
                 region = -1,
                 power = 30,
                 enemy1 = (int)FactionFile.FactionIDs.The_Knights_of_the_Rose,   // do you want factions to be enemies - we should discuss?
+                ally2 = (int)FactionFile.FactionIDs.The_Knights_of_the_Dragon,
                 face = -1,
                 race = -1,
                 sgroup = 2,
